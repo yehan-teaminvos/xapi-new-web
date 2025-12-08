@@ -15,22 +15,17 @@ export default function CarRoadmapPath() {
 
   // Intersection Observer for auto-play on scroll into view
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting && !autoPlayStarted) {
-            // Start auto-play after 3 seconds
-            autoPlayTimeoutRef.current = setTimeout(() => {
-              setAutoPlayStarted(true);
-              setCurrentAutoIndex(0);
-            }, 3000);
-          }
-        });
-      },
-      {
-        threshold: 0.3, // Trigger when 30% of the element is visible
-      }
-    );
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !autoPlayStarted) {
+          // Start auto-play after 3 seconds
+          autoPlayTimeoutRef.current = setTimeout(() => {
+            setAutoPlayStarted(true);
+            setCurrentAutoIndex(0);
+          }, 3000);
+        }
+      });
+    }, {});
 
     if (containerRef.current) {
       observer.observe(containerRef.current);

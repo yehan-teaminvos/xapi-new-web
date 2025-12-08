@@ -15,6 +15,202 @@ export type CaseStudy = {
 
 export const caseStudies: CaseStudy[] = [
   {
+    slug: "major-maritime-organization-building-a-data-marketplace-for-maritime-innovation",
+    title:
+      "Major Maritime Organization: Building a Data Marketplace for Maritime Innovation",
+    description:
+      "A leading maritime authority focused on advancing digital transformation across the maritime ecosystem. The organization aims to foster innovation, improve operational efficiency, and enable data monetization by establishing a centralized data marketplace platform. This initiative is not driven by direct revenue generation, but by the strategic goal of creating a robust infrastructure that empowers startups and ecosystem partners to build creative, data-driven applications.",
+    image: "/media/case-studies/blog4.jpeg",
+    section: [
+      {
+        title: "Client Overview",
+        content: [
+          `A leading maritime authority focused on advancing digital transformation across the maritime ecosystem. The organization aims to foster innovation, improve operational efficiency, and enable data monetization by establishing a centralized data marketplace platform. This initiative is not driven by direct revenue generation, but by the strategic goal of creating a robust infrastructure that empowers startups and ecosystem partners to build creative, data-driven applications.`,
+        ],
+      },
+      {
+        title: "Business Challenge",
+        list: [
+          `- The organization faced several strategic and operational challenges in launching the data marketplace.`,
+          `- Build a scalable platform for publishing, sharing, and monetizing maritime data.`,
+          `- Onboard data from multiple internal and external sources, including cross-border contributors.`,
+          `- Expose APIs to external developers and startups while enforcing strict governance and design standards.`,
+          `- Validate cross-border data compliance and enforce consistent data policies.`,
+          `- Establish a single source of truth for data and APIs to improve traceability and audit readiness.`,
+          `- Gain visibility into the API lifecycle, including onboarding and usage metrics.`,
+          `- Comply with maritime authority standards without compromising innovation agility.`,
+        ],
+      },
+      {
+        title: "Approach",
+        content: [
+          `To address these challenges, the organization adopted a multi-layered strategy focused on governance, compliance, and infrastructure enablement:`,
+        ],
+        list: [
+          `**Platform Development & Data Governance**`,
+          `- Built a centralized data marketplace platform to serve as the foundation for data exchange and innovation.`,
+          `- Established data onboarding workflows with policy attachment, lineage tracking, and compliance validation.`,
+          `- Implemented cross-border data compliance checks to ensure legal and regulatory alignment.`,
+          `- Maintained traceability and auditability for all data objects and their transformations`,
+          `**API Governance & Exposure**`,
+          `- Defined API design guidelines aligned with maritime authority standards.`,
+          `- Created a governance framework for API development, onboarding, and lifecycle management.`,
+          `- Enabled external API access for startups and partners through a structured onboarding process.`,
+          `- Ensured full traceability of API versions, changes, and invocations.`,
+          `**Compliance Validation Workflow**`,
+          `- Introduced a pre-development validation process for both data and APIs.`,
+          `- Designated compliance validators to review and approve assets before development begins.`,
+          `- Maintained audit trails for all validations and approvals.`,
+        ],
+      },
+
+      {
+        title: "Solution Highlights",
+        list: [
+          "- Centralized Data Marketplace Platform with modular governance and onboarding workflows.",
+          "- API Registry & Catalog for discoverability and lifecycle management.",
+          "- Cross-Border Compliance Engine to validate international data sharing.",
+          "- Traceability Dashboards for both data and API assets.",
+          "- Role-Based Access Controls to assign ownership and accountability.",
+          "- Design-First API Governance to enforce standards early in the lifecycle.",
+        ],
+      },
+      {
+        title: "Results & Outcomes",
+        list: [
+          "**Quantitative Impact**",
+          "- Enabled onboarding of diverse maritime datasets from multiple stakeholders.",
+          "- Established a governed API ecosystem with structured onboarding and lifecycle controls.",
+          "- Created a foundation for future data monetization and ecosystem expansion.",
+          "**Qualitative Impact**",
+          `- Improved trust and transparency across the maritime data ecosystem.`,
+          `- Reduced friction in API and data governance, accelerating innovation.`,
+          `- Enhanced audit readiness through traceability and compliance enforcement.`,
+          `- Empowered startups and developers to build applications on top of standardized APIs and trusted data.`,
+        ],
+      },
+      { title: `[Customer Quote]` },
+      {
+        title: `[Solutions Architect Quote]`,
+        content: [
+          `Designing a data marketplace of this scale demanded more than just infrastructure, it required unified governance across data, APIs, and compliance. Our goal was to create a foundation where innovation and regulation could coexist. By embedding traceability, lifecycle visibility, and pre-development validation into every asset, we ensured that both internal teams and external partners could build confidently on trusted, compliant data. What makes this project special is that it's not about monetizing data directly, it's about enabling an entire ecosystem to innovate responsibly.  
+          **[Full Name, Designation]**`,
+        ],
+      },
+    ],
+  },
+  {
+    slug: `champ-cargosystems-establishing-global-api-governance-for-scalable-innovation`,
+    title: `CHAMP Cargosystems: Establishing Global API Governance for Scalable Innovation`,
+    description:
+      "CHAMP Cargosystems is a leading global air cargo IT provider, offering software, connectivity, and digital solutions to airlines, ground handling agents, freight forwarders, and logistics partners. It operates in over 11 global offices, enabling broad reach across international air freight ecosystems.",
+    image: "/media/case-studies/blog5.jpg",
+    section: [
+      {
+        title: "Client Overview",
+        content: [
+          `CHAMP Cargosystems is a leading global air cargo IT provider, offering software, connectivity, and digital solutions to airlines, ground handling agents, freight forwarders, and logistics partners. It operates in over 11 global offices, enabling broad reach across international air freight ecosystems.`,
+          `CHAMP has long invested in API infrastructure. For example, launching a Cargospot API Partner Program to foster integration and innovation in the air cargo ecosystem.`,
+        ],
+      },
+      {
+        title: "Business Challenge",
+        content: [
+          `As CHAMP embarked on a digital transformation journey, it confronted a complex problem:`,
+        ],
+        list: [
+          `- Over 10,000 APIs across multiple teams and locations.`,
+          `- A user base of 550+ individuals spread across 11 global offices.`,
+          `- Volume objectives of 10 million API calls per month or more (CHAMP reported achieving 10M+ API calls in August 2022).`,
+          `- A leadership mandate for API monetization and standardization across a fragmented architecture.`,
+          `- Need for a single source of truth, strong traceability, and consistent governance practices globally.`,
+          `- Tight deadlines, high API usage demands, and the challenge of preserving quality while scaling rapidly.`,
+        ],
+      },
+      {
+        content: [
+          `Essentially, CHAMP needed a governance solution that could keep pace with its growth, remove inter-team friction, and embed compliance and visibility into its API ecosystem without slowing down innovation.`,
+        ],
+      },
+      {
+        title: "Approach",
+        content: [
+          `To meet these challenges, the Xapi team proposed a hybrid governance strategy combining central oversight with local flexibility:`,
+        ],
+        list: [
+          `**1. Unified Governance Platform Deployment**`,
+          `&nbsp;&nbsp;&nbsp;&nbsp;A single SaaS-based governance layer was deployed across CHAMP’s global environment. It provided consistent controls, monitoring, and  
+         &nbsp;&nbsp;&nbsp;&nbsp;policy enforcement across all APIs.`,
+          `**2. Design-First Standardization**`,
+          `&nbsp;&nbsp;&nbsp;&nbsp;Governance was pushed upstream into API design. Standards and templates were established to enforce compliance, reuse, and &nbsp;&nbsp;&nbsp;&nbsp;interoperability early in the lifecycle.`,
+          `**3. Decentralized Autonomy under Central Rules**`,
+          `&nbsp;&nbsp;&nbsp;&nbsp;Each team retained some operational flexibility, but within guardrails set by central governance. This allowed local teams to evolve services  
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; while conforming to global policies.`,
+          `**4. Full Traceability & Auditability**`,
+          `&nbsp;&nbsp;&nbsp;&nbsp;Xapi built logging, lineage, and dashboards into the platform so that every API version, change, or invocation could be traced and visualized &nbsp;&nbsp;&nbsp;&nbsp;centrally.`,
+          `**5. Incremental, High-Impact Rollout**`,
+          `&nbsp;&nbsp;&nbsp;&nbsp;The rollout was staged to manage risk. Core critical APIs were governed first, then gradually expanded to user-facing and partner APIs.`,
+        ],
+      },
+      {
+        title: "Solution Highlights",
+        list: [
+          `- SaaS Governance Engine with modular enforcement and monitoring.`,
+          `- Central API Catalog & Registry consolidating discovery across teams.`,
+          `- Lifecycle Controls enforcing versioning, deprecation, and evolution rules.`,
+          `- AI-driven Discovery & Review capabilities (where applicable) to flag anomalies or non-standard APIs.`,
+          `- Role-Based Access & Ownership Designation to assign accountability.`,
+          `- Real-Time Dashboards showing invocation trends, compliance violations, and usage metrics.`,
+        ],
+      },
+      {
+        title: "Results & Outcomes",
+        list: [
+          `**Quantitative Impact**`,
+          `- Successfully enabled 10 million+ API calls/month while maintaining reliability and governance.`,
+          `- Brought 10,000+ APIs under governed management.`,
+          `- Engaged 550+ users across 11 offices within the governed environment.`,
+          `- Reduced manual oversight overhead by automating compliance and policy enforcement.`,
+          `**Qualitative Impact**`,
+          `- Stronger collaboration across global teams, aligning on shared standards.`,
+          `- Full lifecycle visibility and traceability, reducing miscommunication and duplication.`,
+          `- Reduced friction in governance, making policy compliance less of a drag on delivery velocity.`,
+          `- Laid a foundation for future API monetization by increasing trust, visibility, and reusability.`,
+        ],
+      },
+      {
+        content: [
+          `One public milestone validating CHAMP’s API strategy: CHAMP recorded 10 million API calls in August 2022, a sign of the broad adoption and scale of its API ecosystem.`,
+        ],
+      },
+      {
+        title: `Forward Outlook & Lessons Learned`,
+        list: [
+          `- Governance needs to be embedded early, especially in API design, to prevent inconsistent architectures.`,
+          `- Hybrid governance (central rules + local flexibility) can balance control with innovation.`,
+          `- Visibility, traceability, and compliance become strategic assets, they enable monetization, scaling partnerships, and trust across ecosystems.`,
+          `- Strong governance can be a competitive differentiator in high-regulation domains like aviation.
+      `,
+        ],
+      },
+      {
+        content: [
+          `As CHAMP moves forward into advanced initiatives such as IATA ONE Record integration, its foundation in governance positions it well to scale data sharing, interoperability, and innovation across its global ecosystem.`,
+        ],
+      },
+      {
+        title: `[Customer Quote]`,
+      },
+      {
+        title: `[Solutions Architect Quote]`,
+        content: [
+          `“Helping CHAMP govern thousands of APIs across a globally distributed environment required more than just tools, it demanded structure, visibility, and automation. With Xapi, we implemented a unified governance layer that automated compliance, enforced design standards, and delivered full traceability without slowing development. The result was a dramatic reduction in manual oversight and a solid foundation for secure, scalable API innovation across their ecosystem.”  
+          **[Full Name, Designation]**`,
+        ],
+      },
+    ],
+  },
+  {
     slug: "a-collaborative-project-that-reached-new-heights-with-the-api-design-first-approach",
     title:
       "A collaborative project that reached new heights with the API Design-First Approach",
@@ -348,202 +544,6 @@ They managed the tasks by transitionaning the relevant requirement tickets throu
           `*"Integrating Xapi into our development process has been really beneficial for Codeobe. The platform's comprehensive API design facility has allowed us to standardize our documentation and manage API versions efficiently. Xapi's collaboration features have bridged the gap between our geographically dispersed teams, enabling better communication and smoother integration efforts. Overall, Xapi has accelerated our development cycles, improved product quality, and enabled us to meet the evolving needs of our clients with greater agility. We look forward to continuing our partnership with Xapi and exploring new features on their roadmap."*`,
           `**Ready to streamline your API design and development process? Unlock the potential of the Xapi and start your journey towards innovation today!**`,
           `Remember, while this case study is fictional, it vividly illustrates the transformative power of an API-Design First approach in revolutionizing startups. It is based on the firsthand experiences and perspectives of developers and users of Xapi, and we believe that this will serve as a valuable resource for learning the importance of the API Design-First approach.`,
-        ],
-      },
-    ],
-  },
-  {
-    slug: "major-maritime-organization-building-a-data-marketplace-for-maritime-innovation",
-    title:
-      "Major Maritime Organization: Building a Data Marketplace for Maritime Innovation",
-    description:
-      "A leading maritime authority focused on advancing digital transformation across the maritime ecosystem. The organization aims to foster innovation, improve operational efficiency, and enable data monetization by establishing a centralized data marketplace platform. This initiative is not driven by direct revenue generation, but by the strategic goal of creating a robust infrastructure that empowers startups and ecosystem partners to build creative, data-driven applications.",
-    image: "/media/case-studies/blog4.jpeg",
-    section: [
-      {
-        title: "Client Overview",
-        content: [
-          `A leading maritime authority focused on advancing digital transformation across the maritime ecosystem. The organization aims to foster innovation, improve operational efficiency, and enable data monetization by establishing a centralized data marketplace platform. This initiative is not driven by direct revenue generation, but by the strategic goal of creating a robust infrastructure that empowers startups and ecosystem partners to build creative, data-driven applications.`,
-        ],
-      },
-      {
-        title: "Business Challenge",
-        list: [
-          `- The organization faced several strategic and operational challenges in launching the data marketplace.`,
-          `- Build a scalable platform for publishing, sharing, and monetizing maritime data.`,
-          `- Onboard data from multiple internal and external sources, including cross-border contributors.`,
-          `- Expose APIs to external developers and startups while enforcing strict governance and design standards.`,
-          `- Validate cross-border data compliance and enforce consistent data policies.`,
-          `- Establish a single source of truth for data and APIs to improve traceability and audit readiness.`,
-          `- Gain visibility into the API lifecycle, including onboarding and usage metrics.`,
-          `- Comply with maritime authority standards without compromising innovation agility.`,
-        ],
-      },
-      {
-        title: "Approach",
-        content: [
-          `To address these challenges, the organization adopted a multi-layered strategy focused on governance, compliance, and infrastructure enablement:`,
-        ],
-        list: [
-          `**Platform Development & Data Governance**`,
-          `- Built a centralized data marketplace platform to serve as the foundation for data exchange and innovation.`,
-          `- Established data onboarding workflows with policy attachment, lineage tracking, and compliance validation.`,
-          `- Implemented cross-border data compliance checks to ensure legal and regulatory alignment.`,
-          `- Maintained traceability and auditability for all data objects and their transformations`,
-          `**API Governance & Exposure**`,
-          `- Defined API design guidelines aligned with maritime authority standards.`,
-          `- Created a governance framework for API development, onboarding, and lifecycle management.`,
-          `- Enabled external API access for startups and partners through a structured onboarding process.`,
-          `- Ensured full traceability of API versions, changes, and invocations.`,
-          `**Compliance Validation Workflow**`,
-          `- Introduced a pre-development validation process for both data and APIs.`,
-          `- Designated compliance validators to review and approve assets before development begins.`,
-          `- Maintained audit trails for all validations and approvals.`,
-        ],
-      },
-
-      {
-        title: "Solution Highlights",
-        list: [
-          "- Centralized Data Marketplace Platform with modular governance and onboarding workflows.",
-          "- API Registry & Catalog for discoverability and lifecycle management.",
-          "- Cross-Border Compliance Engine to validate international data sharing.",
-          "- Traceability Dashboards for both data and API assets.",
-          "- Role-Based Access Controls to assign ownership and accountability.",
-          "- Design-First API Governance to enforce standards early in the lifecycle.",
-        ],
-      },
-      {
-        title: "Results & Outcomes",
-        list: [
-          "**Quantitative Impact**",
-          "- Enabled onboarding of diverse maritime datasets from multiple stakeholders.",
-          "- Established a governed API ecosystem with structured onboarding and lifecycle controls.",
-          "- Created a foundation for future data monetization and ecosystem expansion.",
-          "**Qualitative Impact**",
-          `- Improved trust and transparency across the maritime data ecosystem.`,
-          `- Reduced friction in API and data governance, accelerating innovation.`,
-          `- Enhanced audit readiness through traceability and compliance enforcement.`,
-          `- Empowered startups and developers to build applications on top of standardized APIs and trusted data.`,
-        ],
-      },
-      { title: `[Customer Quote]` },
-      {
-        title: `[Solutions Architect Quote]`,
-        content: [
-          `Designing a data marketplace of this scale demanded more than just infrastructure, it required unified governance across data, APIs, and compliance. Our goal was to create a foundation where innovation and regulation could coexist. By embedding traceability, lifecycle visibility, and pre-development validation into every asset, we ensured that both internal teams and external partners could build confidently on trusted, compliant data. What makes this project special is that it's not about monetizing data directly, it's about enabling an entire ecosystem to innovate responsibly.  
-          **[Full Name, Designation]**`,
-        ],
-      },
-    ],
-  },
-  {
-    slug: `champ-cargosystems-establishing-global-api-governance-for-scalable-innovation`,
-    title: `CHAMP Cargosystems: Establishing Global API Governance for Scalable Innovation`,
-    description:
-      "CHAMP Cargosystems is a leading global air cargo IT provider, offering software, connectivity, and digital solutions to airlines, ground handling agents, freight forwarders, and logistics partners. It operates in over 11 global offices, enabling broad reach across international air freight ecosystems.",
-    image: "/media/case-studies/blog5.jpg",
-    section: [
-      {
-        title: "Client Overview",
-        content: [
-          `CHAMP Cargosystems is a leading global air cargo IT provider, offering software, connectivity, and digital solutions to airlines, ground handling agents, freight forwarders, and logistics partners. It operates in over 11 global offices, enabling broad reach across international air freight ecosystems.`,
-          `CHAMP has long invested in API infrastructure. For example, launching a Cargospot API Partner Program to foster integration and innovation in the air cargo ecosystem.`,
-        ],
-      },
-      {
-        title: "Business Challenge",
-        content: [
-          `As CHAMP embarked on a digital transformation journey, it confronted a complex problem:`,
-        ],
-        list: [
-          `- Over 10,000 APIs across multiple teams and locations.`,
-          `- A user base of 550+ individuals spread across 11 global offices.`,
-          `- Volume objectives of 10 million API calls per month or more (CHAMP reported achieving 10M+ API calls in August 2022).`,
-          `- A leadership mandate for API monetization and standardization across a fragmented architecture.`,
-          `- Need for a single source of truth, strong traceability, and consistent governance practices globally.`,
-          `- Tight deadlines, high API usage demands, and the challenge of preserving quality while scaling rapidly.`,
-        ],
-      },
-      {
-        content: [
-          `Essentially, CHAMP needed a governance solution that could keep pace with its growth, remove inter-team friction, and embed compliance and visibility into its API ecosystem without slowing down innovation.`,
-        ],
-      },
-      {
-        title: "Approach",
-        content: [
-          `To meet these challenges, the Xapi team proposed a hybrid governance strategy combining central oversight with local flexibility:`,
-        ],
-        list: [
-          `**1. Unified Governance Platform Deployment**`,
-          `&nbsp;&nbsp;&nbsp;&nbsp;A single SaaS-based governance layer was deployed across CHAMP’s global environment. It provided consistent controls, monitoring, and  
-         &nbsp;&nbsp;&nbsp;&nbsp;policy enforcement across all APIs.`,
-          `**2. Design-First Standardization**`,
-          `&nbsp;&nbsp;&nbsp;&nbsp;Governance was pushed upstream into API design. Standards and templates were established to enforce compliance, reuse, and &nbsp;&nbsp;&nbsp;&nbsp;interoperability early in the lifecycle.`,
-          `**3. Decentralized Autonomy under Central Rules**`,
-          `&nbsp;&nbsp;&nbsp;&nbsp;Each team retained some operational flexibility, but within guardrails set by central governance. This allowed local teams to evolve services  
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; while conforming to global policies.`,
-          `**4. Full Traceability & Auditability**`,
-          `&nbsp;&nbsp;&nbsp;&nbsp;Xapi built logging, lineage, and dashboards into the platform so that every API version, change, or invocation could be traced and visualized &nbsp;&nbsp;&nbsp;&nbsp;centrally.`,
-          `**5. Incremental, High-Impact Rollout**`,
-          `&nbsp;&nbsp;&nbsp;&nbsp;The rollout was staged to manage risk. Core critical APIs were governed first, then gradually expanded to user-facing and partner APIs.`,
-        ],
-      },
-      {
-        title: "Solution Highlights",
-        list: [
-          `- SaaS Governance Engine with modular enforcement and monitoring.`,
-          `- Central API Catalog & Registry consolidating discovery across teams.`,
-          `- Lifecycle Controls enforcing versioning, deprecation, and evolution rules.`,
-          `- AI-driven Discovery & Review capabilities (where applicable) to flag anomalies or non-standard APIs.`,
-          `- Role-Based Access & Ownership Designation to assign accountability.`,
-          `- Real-Time Dashboards showing invocation trends, compliance violations, and usage metrics.`,
-        ],
-      },
-      {
-        title: "Results & Outcomes",
-        list: [
-          `**Quantitative Impact**`,
-          `- Successfully enabled 10 million+ API calls/month while maintaining reliability and governance.`,
-          `- Brought 10,000+ APIs under governed management.`,
-          `- Engaged 550+ users across 11 offices within the governed environment.`,
-          `- Reduced manual oversight overhead by automating compliance and policy enforcement.`,
-          `**Qualitative Impact**`,
-          `- Stronger collaboration across global teams, aligning on shared standards.`,
-          `- Full lifecycle visibility and traceability, reducing miscommunication and duplication.`,
-          `- Reduced friction in governance, making policy compliance less of a drag on delivery velocity.`,
-          `- Laid a foundation for future API monetization by increasing trust, visibility, and reusability.`,
-        ],
-      },
-      {
-        content: [
-          `One public milestone validating CHAMP’s API strategy: CHAMP recorded 10 million API calls in August 2022, a sign of the broad adoption and scale of its API ecosystem.`,
-        ],
-      },
-      {
-        title: `Forward Outlook & Lessons Learned`,
-        list: [
-          `- Governance needs to be embedded early, especially in API design, to prevent inconsistent architectures.`,
-          `- Hybrid governance (central rules + local flexibility) can balance control with innovation.`,
-          `- Visibility, traceability, and compliance become strategic assets, they enable monetization, scaling partnerships, and trust across ecosystems.`,
-          `- Strong governance can be a competitive differentiator in high-regulation domains like aviation.
-`,
-        ],
-      },
-      {
-        content: [
-          `As CHAMP moves forward into advanced initiatives such as IATA ONE Record integration, its foundation in governance positions it well to scale data sharing, interoperability, and innovation across its global ecosystem.`,
-        ],
-      },
-      {
-        title: `[Customer Quote]`,
-      },
-      {
-        title: `[Solutions Architect Quote]`,
-        content: [
-          `“Helping CHAMP govern thousands of APIs across a globally distributed environment required more than just tools, it demanded structure, visibility, and automation. With Xapi, we implemented a unified governance layer that automated compliance, enforced design standards, and delivered full traceability without slowing development. The result was a dramatic reduction in manual oversight and a solid foundation for secure, scalable API innovation across their ecosystem.”  
-          **[Full Name, Designation]**`,
         ],
       },
     ],
