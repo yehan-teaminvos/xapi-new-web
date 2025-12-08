@@ -194,10 +194,7 @@ export default function Header() {
             </div>
 
             <div className="hidden lg:flex items-center gap-x-4">
-              <Link
-                className="group px-2"
-                href={configs?.signInUrl ?? "#"}
-              >
+              <Link className="group px-2" href={configs?.signInUrl ?? "#"}>
                 <div className="xl:text-[18px] text-base text-white font-artegra-sans-alt-medium cursor-pointer py-0.5  duration-200">
                   Sign In
                   <div className="h-[1px] w-full bg-white scale-x-0 origin-center transition-transform duration-300 group-hover:scale-x-100" />
@@ -209,7 +206,7 @@ export default function Header() {
                 target="_blank"
                 className="px-0.5 py-0.5"
               >
-                <div className="animated-gradient-border hover:scale-[103%] duration-300">
+                <div className=" ">
                   <div className="animated-gradient-border-inner text-secondary ">
                     Start Xapi For Free
                   </div>
@@ -304,9 +301,9 @@ export default function Header() {
                   <MenuButton
                     link={configs.signUpUrl ?? "#"}
                     // className="bg-white text-secondary hover:bg-white duration-300 hover:text-tertiary"
-                    className="bg-linear-to-r from-primary via-secondary to-tertiary px-1 py-1 rounded-[5px]"
+                    className=" px-0 py-1 rounded-[5px]"
                   >
-                    <div className="px-3 py-1 bg-white  text-secondary hover:bg-tertiary duration-300 hover:text-white rounded-[5px]">
+                    <div className="px-3 py-2 bg-white  text-secondary hover:bg-tertiary duration-300 hover:text-white rounded-[5px]">
                       Start Xapi For Free
                     </div>
                   </MenuButton>
