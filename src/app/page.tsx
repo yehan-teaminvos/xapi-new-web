@@ -1008,20 +1008,7 @@ export default function Page() {
               <div>
                 <div className="testimonial-pagination" />
               </div>
-              <div className="flex items-center gap-x-2.5">
-                <button
-                  type="button"
-                  className="p-3 rounded-[10px] bg-white hover:scale-115 duration-200 hover:shadow-2xl cursor-pointer testimonial-pagination-prevEl"
-                >
-                  <MoveLeft className="w-6 h-6" />
-                </button>
-                <button
-                  type="button"
-                  className="p-3 rounded-[10px] bg-white hover:scale-120 duration-200 cursor-pointer hover:shadow-2xl testimonial-pagination-nextEl"
-                >
-                  <MoveRight className="w-6 h-6" />
-                </button>
-              </div>
+              <div className="flex items-center gap-x-2.5"></div>
             </div>
           </motion.div>
         </div>
