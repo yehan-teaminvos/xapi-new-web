@@ -14,6 +14,8 @@ import { services } from "@/data/solutions";
 import useChat from "@/hooks/use-chat";
 import { cn } from "@/lib/utils";
 import { SolutionTestimonial } from "@/components/sliders/solution-testimonial-slider";
+import Link from "next/link";
+import configs from "@/config/env_config";
 
 const title_hero = ["Solutions That Scale With Your Business &amp; Industry"];
 function Page() {
@@ -344,17 +346,23 @@ function Page() {
                     Join Now
                   </div>
                 </button> */}
+
                   <Button
                     title="Start Free Trial"
                     type="button"
                     className="text-lg py-2"
+                    link={configs?.signInUrl ?? "#"}
                   />
-                  <button className="px-5.5 py-2.5 text-white hover:text-tertiary border-white hover:bg-white border-[1px] rounded-[5px]  leading-[26px] sm:leading-[32px] font-helvetica text-base lg:text-lg font-bold cursor-pointer">
-                    Book Demo
+
+                  <button className=" px-5.5 py-2.5 text-white hover:text-tertiary border-white hover:bg-white border-[1px] rounded-[5px]  leading-[26px] sm:leading-[32px] font-helvetica text-base lg:text-lg font-bold cursor-pointer">
+                    <Link href="/contact" className="cursor-pointer">
+                      Book Demo
+                    </Link>
                   </button>
+
                   <MenuButton
-                    className="flex items-center bg-tertiary z-10 hover:bg-white hover:text-tertiary text-center text-lg  sm:leading-0 leading-6 py-3 text-white"
-                    link="/"
+                    className="flex items-center bg-tertiary z-10 hover:bg-white hover:text-tertiary text-center sm:text-lg text-[16px] py-6  sm:leading-0 leading-6  text-white"
+                    link="mailto:hello@xapi-io.hub"
                   >
                     Connect with a Solutions Expert
                   </MenuButton>
@@ -366,7 +374,7 @@ function Page() {
                   alt="XAPI footer image"
                   width={400}
                   height={400}
-                  className=" object-cover h-full w-auto max-w-2xl xl:opacity-100 lg:opacity-50 opacity-0"
+                  className=" object-cover h-full w-auto max-w-2xl xl:opacity-100 lg:opacity-50  opacity-0 lg:block hidden"
                 />
               </div>
             </div>

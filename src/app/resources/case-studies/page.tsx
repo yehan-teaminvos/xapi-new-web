@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { MenuButton } from "@/components/header";
+import configs from "@/config/env_config";
 import Button from "@/components/button";
 
 const strings = ["Xapi Case Studies"];
@@ -101,13 +102,18 @@ export default function Page() {
                     title="Start Free Trial"
                     type="button"
                     className="text-lg py-2"
+                    link={configs?.signInUrl ?? "#"}
                   />
-                  <button className="px-5.5 lg:py-2.5 py-2 text-white hover:text-tertiary border-white hover:bg-white border-[1px] rounded-[5px]  leading-[26px] sm:leading-[32px] font-helvetica text-base lg:text-lg font-bold cursor-pointer">
-                    Book Demo
+
+                  <button className=" px-5.5 py-2.5 text-white hover:text-tertiary border-white hover:bg-white border-[1px] rounded-[5px]  leading-[26px] sm:leading-[32px] font-helvetica text-base lg:text-lg font-bold cursor-pointer">
+                    <Link href="/contact" className="cursor-pointer">
+                      Book Demo
+                    </Link>
                   </button>
+
                   <MenuButton
-                    className="flex items-center z-10 bg-tertiary hover:bg-white hover:text-tertiary text-center text-lg  sm:leading-0 leading-6 py-3 sm:py-6 text-white"
-                    link="/"
+                    className="flex items-center bg-tertiary z-10 hover:bg-white hover:text-tertiary text-center sm:text-lg text-[16px] py-6  sm:leading-0 leading-6  text-white"
+                    link="mailto:hello@xapi-io.hub"
                   >
                     Connect with a Solutions Expert
                   </MenuButton>
@@ -119,7 +125,7 @@ export default function Page() {
                   alt="XAPI footer image"
                   width={400}
                   height={400}
-                  className=" object-cover h-full w-auto max-w-2xl xl:opacity-100 lg:opacity-50 opacity-0"
+                  className=" object-cover h-full w-auto max-w-2xl xl:opacity-100 lg:opacity-50  opacity-0 lg:block hidden"
                 />
               </div>
             </div>

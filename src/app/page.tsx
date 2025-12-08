@@ -221,7 +221,7 @@ export default function Page() {
               </AnimatePresence>
             </div>
 
-            <div className="flex items-center justify-between w-full  gap-8 mt-8  sm:mt-0  ">
+            <div className="flex items-center justify-between w-full  gap-8   sm:mt-0  ">
               <div className="flex transition-all duration-300 flex-col w-full justify-center items-start  ">
                 <div className="w-full max-w-75 sm:max-w-80 mx-auto pb-4 sm:pb-5 xl:max-w-xl lg:hidden items-end justify-end ">
                   <Lottie

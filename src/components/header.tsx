@@ -153,7 +153,7 @@ export default function Header() {
                                   <span>Whitepapers</span>
                                 </Link>
                                 <Link
-                                  href={process.env.NEXT_PUBLIC_DOCS_URL ?? "#"}
+                                  href="https://learning.xapihub.io/documentation"
                                   target="_blank"
                                   rel="noopener noreferrer"
                                   className="text-white p-3 flex items-center gap-4 rounded-b-[10px] hover:bg-gradient-to-r hover:from-primary hover:to-tertiary"
