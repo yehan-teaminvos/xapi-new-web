@@ -1,0 +1,81 @@
+name: Stage deployment
+
+on:
+  workflow_dispatch:
+
+env:
+  NEXT_PUBLIC_APP_ENV: stage
+
+jobs:
+  build:
+    if: (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/hot-fix')
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check user for team affiliation
+      uses: tspascoal/get-user-teams-membership@v3
+      id: teamAffiliation
+      with:
+        GITHUB_TOKEN: ${{ secrets.WORKFLOW_RUN_PERMISSION_TOKEN }}
+        username: ${{ github.actor }}
+        team: 'XAPI Deployment Team'
+
+    - name: Stop workflow if user is no member of Deployment Team
+      if: ${{ steps.teamAffiliation.outputs.isTeamMember == 'false' }}
+      run: |
+        echo "You Have No Permission to Trigger this Workflow"
+        exit 1
+
+    - name: Check out repository code
+      uses: actions/checkout@v4
+
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 18
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build the site
+      run: npm run build
+
+    - name: Generate Version
+      id: version
+      run: |
+        echo "VERSION=$(date +%Y%m%d)${GITHUB_RUN_NUMBER}" >> $GITHUB_ENV
+        echo "VERSION=$(date +%Y%m%d)${GITHUB_RUN_NUMBER}" >> $GITHUB_OUTPUT
+
+    - name: Login to Docker Hub
+      if: success()
+      uses: docker/login-action@v3
+      with:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_PASSWORD }}
+
+    - name: Docker Build & Push
+      if: success()
+      run: |
+        docker build . -t xapihub/xventure:microsite-v2-${VERSION}
+        docker push xapihub/xventure:microsite-v2-${VERSION}
+
+    outputs:
+      VERSION: ${{ steps.version.outputs.VERSION }}
+
+  deploy:
+    needs: build
+    runs-on: stage-runner
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v4
+
+    - name: Print version
+      run: |
+        echo "VERSION=${{ needs.build.outputs.VERSION }}" > ${GITHUB_ENV}
+        echo "${VERSION}"
+
+    - name: Install helm chart
+      run: helm upgrade --install --set image.tag=microsite-v2-${{ env.VERSION }} --set deployment=stage microsite-v2 .kube --wait -n stage
+
+    - name: Rollback deployment on fail
+      if: failure()
+      run: helm rollback microsite-v2 -n stage

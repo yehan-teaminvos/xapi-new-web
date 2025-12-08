@@ -1,0 +1,49 @@
+<svg width="1440" height="861" viewBox="0 0 1440 861" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1440" height="858.977" fill="white"/>
+<line y1="93.5928" x2="1440" y2="93.5928" stroke="black" stroke-opacity="0.05"/>
+<line y1="187.686" x2="1440" y2="187.686" stroke="black" stroke-opacity="0.05"/>
+<line y1="281.778" x2="1440" y2="281.778" stroke="black" stroke-opacity="0.05"/>
+<line y1="375.871" x2="1440" y2="375.871" stroke="black" stroke-opacity="0.05"/>
+<line y1="469.964" x2="1440" y2="469.964" stroke="black" stroke-opacity="0.05"/>
+<line y1="564.057" x2="1440" y2="564.057" stroke="black" stroke-opacity="0.05"/>
+<line y1="658.149" x2="1440" y2="658.149" stroke="black" stroke-opacity="0.05"/>
+<line y1="752.242" x2="1440" y2="752.242" stroke="black" stroke-opacity="0.05"/>
+<line y1="846.336" x2="1440" y2="846.336" stroke="black" stroke-opacity="0.05"/>
+<line y1="-0.5" x2="858.977" y2="-0.5" transform="matrix(0 -1 -1 0 930 858.977)" stroke="black" stroke-opacity="0.05"/>
+<line y1="-0.5" x2="858.977" y2="-0.5" transform="matrix(0 -1 -1 0 1023 858.977)" stroke="black" stroke-opacity="0.05"/>
+<line y1="-0.5" x2="858.977" y2="-0.5" transform="matrix(0 -1 -1 0 1116 858.977)" stroke="black" stroke-opacity="0.05"/>
+<line y1="-0.5" x2="858.977" y2="-0.5" transform="matrix(0 -1 -1 0 1209 858.977)" stroke="black" stroke-opacity="0.05"/>
+<line y1="-0.5" x2="858.977" y2="-0.5" transform="matrix(0 -1 -1 0 1302 858.977)" stroke="black" stroke-opacity="0.05"/>
+<line y1="-0.5" x2="858.977" y2="-0.5" transform="matrix(0 -1 -1 0 1395 858.977)" stroke="black" stroke-opacity="0.05"/>
+<line y1="-0.5" x2="858.977" y2="-0.5" transform="matrix(0 -1 -1 0 837 858.977)" stroke="black" stroke-opacity="0.05"/>
+<line y1="-0.5" x2="858.977" y2="-0.5" transform="matrix(0 -1 -1 0 744 858.977)" stroke="black" stroke-opacity="0.05"/>
+<line y1="-0.5" x2="858.977" y2="-0.5" transform="matrix(0 -1 -1 0 651 858.977)" stroke="black" stroke-opacity="0.05"/>
+<line y1="-0.5" x2="858.977" y2="-0.5" transform="matrix(0 -1 -1 0 558 858.977)" stroke="black" stroke-opacity="0.05"/>
+<line y1="-0.5" x2="858.977" y2="-0.5" transform="matrix(0 -1 -1 0 465 858.977)" stroke="black" stroke-opacity="0.05"/>
+<line y1="-0.5" x2="858.977" y2="-0.5" transform="matrix(0 -1 -1 0 372 858.977)" stroke="black" stroke-opacity="0.05"/>
+<line y1="-0.5" x2="858.977" y2="-0.5" transform="matrix(0 -1 -1 0 279 858.977)" stroke="black" stroke-opacity="0.05"/>
+<line y1="-0.5" x2="858.977" y2="-0.5" transform="matrix(0 -1 -1 0 186 858.977)" stroke="black" stroke-opacity="0.05"/>
+<line y1="-0.5" x2="858.977" y2="-0.5" transform="matrix(0 -1 -1 0 93 858.977)" stroke="black" stroke-opacity="0.05"/>
+<rect y="578.722" width="1440" height="280.255" fill="url(#paint0_linear_1965_12480)"/>
+<rect width="1440" height="280.255" transform="matrix(1 0 0 -1 0 282.278)" fill="url(#paint1_linear_1965_12480)"/>
+<rect width="858.977" height="277" rx="20" transform="matrix(0 -1 -1 0 279 858.977)" fill="url(#paint2_linear_1965_12480)"/>
+<rect x="1163" y="861" width="858.977" height="277" transform="rotate(-90 1163 861)" fill="url(#paint3_linear_1965_12480)"/>
+<defs>
+<linearGradient id="paint0_linear_1965_12480" x1="720" y1="578.722" x2="720" y2="858.977" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0"/>
+<stop offset="0.793269" stop-color="white"/>
+</linearGradient>
+<linearGradient id="paint1_linear_1965_12480" x1="720" y1="8.35225e-06" x2="720" y2="280.255" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0"/>
+<stop offset="0.793269" stop-color="white"/>
+</linearGradient>
+<linearGradient id="paint2_linear_1965_12480" x1="429.488" y1="8.25524e-06" x2="429.488" y2="277" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0"/>
+<stop offset="0.793269" stop-color="white"/>
+</linearGradient>
+<linearGradient id="paint3_linear_1965_12480" x1="1592.49" y1="861" x2="1592.49" y2="1138" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0"/>
+<stop offset="0.793269" stop-color="white"/>
+</linearGradient>
+</defs>
+</svg>
