@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { socialLinks } from "@/data/social";
+import configs from "@/config/env_config";
 import Link from "next/link";
 
 export default function Page() {
@@ -88,14 +89,17 @@ export default function Page() {
                   governance as a growth enabler, not a bottleneck.
                 </p>
                 <div className="flex flex-col sm:mt-25 mt-17.5 gap-5 sm:flex-row">
-                  <button className="group px-12 py-3.5 bg-white hover:bg-gradient-to-r hover:from-tertiary hover:via-secondary hover:to-primary  font-bold rounded-[5px] cursor-pointer">
-                    <div className="text-transparent bg-clip-text bg-gradient-to-r from-tertiary via-secondary to-primary  group-hover:text-white font-helvetica text-lg">
-                      Start Free Trial
-                    </div>
-                  </button>
-
-                  <button className="px-5.5 py-2.5 text-white hover:text-tertiary border-white hover:bg-white border-[1px] rounded-[5px]  leading-[26px] sm:leading-[32px] font-helvetica text-base lg:text-lg font-bold cursor-pointer">
-                    Book Demo
+                  <Link href={configs?.signInUrl ?? "#"}>
+                    <button className="group px-12 py-3.5 bg-white hover:bg-gradient-to-r hover:from-tertiary hover:via-secondary hover:to-primary  font-bold rounded-[5px] cursor-pointer">
+                      <div className="text-transparent bg-clip-text bg-gradient-to-r from-tertiary via-secondary to-primary  group-hover:text-white font-helvetica text-lg">
+                        Start Free Trial
+                      </div>
+                    </button>
+                  </Link>
+                  <button className=" px-5.5 py-2.5 text-white hover:text-tertiary border-white hover:bg-white border-[1px] rounded-[5px]  leading-[26px] sm:leading-[32px] font-helvetica text-base lg:text-lg font-bold cursor-pointer">
+                    <Link href="/contact" className="cursor-pointer">
+                      Book Demo
+                    </Link>
                   </button>
                 </div>
               </div>

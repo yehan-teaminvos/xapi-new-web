@@ -87,7 +87,7 @@ const ChatWithAI = ({ hideInput = false }: Props) => {
                 "What is effortless governance?",
                 "Ask me anything about Xapi…",
                 "What is unified governance?",
-                "How do I get 100% digital visibility?",
+                "How to gain full visibility?",
                 "How do I become AI ready?",
               ]}
               typeSpeed={40}
@@ -178,63 +178,66 @@ const ChatWithAI = ({ hideInput = false }: Props) => {
                   </p>
                   <p className=" h-fit pt-2 pb-1 text-center items-center w-full text-xl leading-8 bg-gradient-to-r from-[#8022B9] to-[#513DF4] bg-clip-text text-transparent transition-all duration-300  md:text-2xl lg:text-3xl font-helvetica italic">
                     Start chatting with{" "}
-                    <span className="font-helvetica-bold italic">
-                      Xapi AI
-                    </span>
+                    <span className="font-helvetica-bold italic">Xapi AI</span>
                   </p>
                 </div>
               </div>
             ))}
           {!messages ||
-            (messages.length > 0 && <div className="flex flex-col overflow-hidden overflow-y-auto no-scrollbar mask-y-from-90% flex-1 h-full">
-              <div className="space-y-2 lg:space-y-5 h-full pt-[5vh] flex-1">
-                {messages.map(
-                  (message) =>
-                    message.content && (
-                      <div
-                        key={message.content}
-                        className={cn("flex flex-row w-full h-auto px-2 ", {
-                          "justify-end": message.role === "user",
-                        })}
-                      >
+            (messages.length > 0 && (
+              <div className="flex flex-col overflow-hidden overflow-y-auto no-scrollbar mask-y-from-90% flex-1 h-full">
+                <div className="space-y-2 lg:space-y-5 h-full pt-[5vh] flex-1">
+                  {messages.map(
+                    (message) =>
+                      message.content && (
                         <div
-                          className={cn("bg-white px-4 py-2 rounded-lg border", {
-                            "": message.role === "user",
-                            "": message.role === "agent",
+                          key={message.content}
+                          className={cn("flex flex-row w-full h-auto px-2 ", {
+                            "justify-end": message.role === "user",
                           })}
                         >
                           <div
                             className={cn(
-                              `prose dark:prose-invert prose-h1:font-bold text-[14px] prose-h1:text-lg prose-a:text-accent prose-img:rounded-none prose-p:my-1 prose-code:block prose-code:before:hidden prose-code:after:hidden prose-em:block prose-em:mb-2`,
-                              `prose-a:text-black bg-gradient-to-r from-[#8022B9] to-[#513DF4] bg-clip-text text-transparent`
+                              "bg-white px-4 py-2 rounded-lg border",
+                              {
+                                "": message.role === "user",
+                                "": message.role === "agent",
+                              }
                             )}
                           >
-                            <Markdown
-                              rehypePlugins={[rehypeRaw]}
-                              remarkPlugins={[remarkGfm]}
+                            <div
+                              className={cn(
+                                `prose dark:prose-invert prose-h1:font-bold text-[14px] prose-h1:text-lg prose-a:text-accent prose-img:rounded-none prose-p:my-1 prose-code:block prose-code:before:hidden prose-code:after:hidden prose-em:block prose-em:mb-2`,
+                                `prose-a:text-black bg-gradient-to-r from-[#8022B9] to-[#513DF4] bg-clip-text text-transparent`
+                              )}
                             >
-                              {message.content}
-                            </Markdown>
+                              <Markdown
+                                rehypePlugins={[rehypeRaw]}
+                                remarkPlugins={[remarkGfm]}
+                              >
+                                {message.content}
+                              </Markdown>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    )
-                )}
-                {isWaiting && (
+                      )
+                  )}
+                  {isWaiting && (
+                    <div
+                      className={cn(
+                        "flex flex-row w-min gap-2 px-2 lg:px-4 border py-2 rounded-lg ml-4 bg-white text-[#8022B9]"
+                      )}
+                    >
+                      <Loader2 className="animate-spin" /> Processing...
+                    </div>
+                  )}
                   <div
-                    className={cn(
-                      "flex flex-row w-min gap-2 px-2 lg:px-4 border py-2 rounded-lg ml-4 bg-white text-[#8022B9]"
-                    )}
-                  >
-                    <Loader2 className="animate-spin" /> Processing...
-                  </div>
-                )}
-                <div
-                  ref={endRef}
-                  className={messages && messages.length > 0 ? "pt-20" : ""}
-                />
+                    ref={endRef}
+                    className={messages && messages.length > 0 ? "pt-20" : ""}
+                  />
+                </div>
               </div>
-            </div>)}
+            ))}
 
           {/* Desktop Grid View */}
           {!messages ||
