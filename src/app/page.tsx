@@ -267,7 +267,7 @@ export default function Page() {
                   </div>
                 </motion.a>
               </div>
-              <div className="w-full h-full max-w-[650px] xl:max-w-[750px] 2xl:max-w-[900px]">
+              <div className="w-full max-w-[400px] xl:max-w-[500px] 2xl:max-w-[800px] hidden lg:flex items-end justify-end">
                 <Lottie animationData={heroAnimation} loop={true} />
               </div>
             </div>
