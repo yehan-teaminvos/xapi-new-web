@@ -1080,7 +1080,7 @@ export default function Page() {
                   );
                 })}
               </div>
-              <div className="lg:h-50 xl:h-56 2xl:h-84 h-auto w-full mt-15 ">
+              {/* <div className="lg:h-50 xl:h-56 2xl:h-84 h-auto w-full mt-15 ">
                 <Image
                   src="/media/home/contact-map.svg"
                   alt="map"
@@ -1088,6 +1088,18 @@ export default function Page() {
                   height={229}
                   className="w-full h-full object-cover"
                 />
+              </div> */}
+
+              <div className="w-full mt-15">
+                <div className="aspect-[16/8] w-full">
+                  <Image
+                    src="/media/home/contact-map.svg"
+                    alt="map"
+                    width={407}
+                    height={229}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
             </motion.div>
             <motion.div
