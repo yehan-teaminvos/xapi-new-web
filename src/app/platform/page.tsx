@@ -104,7 +104,7 @@ workflows.`,
 interaction for governance and audit purposes. This
 ensures transparency, supports compliance audits, and
 strengthens trust across teams and regulators.`,
-      video: "/media/videos/api/api-catalog.webm",
+      video: "/media/videos/api/audit.webm",
     },
   ],
   dataGovernance: [
@@ -197,7 +197,7 @@ across teams and departments.
 project-specific AI assets.
 This structure improves discoverability, reuse, and
 governance across the AI ecosystem.`,
-      video: "/media/videos/ai/ai-beaver.webm",
+      video: "/media/videos/ai/catalog-new.webm",
     },
     {
       title: "Business Process Engine",
@@ -205,7 +205,7 @@ governance across the AI ecosystem.`,
 validation, approval, documentation, and compliance
 checks. Also integrates with policy enforcement and classification workflows to ensure every AI asset aligns
 with organizational governance requirements.`,
-      video: "/media/videos/ai/ai-inspector.webm",
+      video: "/media/videos/ai/business-process.webm",
     },
     {
       title: "AI-Assisted Governance Tools",
@@ -220,6 +220,7 @@ standards alignment.`,
       title: "Policy Management",
       content: `Define and enforce policies for AI model usage,
 deployment, retraining, and compliance.`,
+      video: "/media/videos/ai/policy.webm",
     },
     {
       title: "Classification Management",
@@ -231,7 +232,7 @@ domain, sensitivity, and regulatory impact.`,
       title: "Compliance Management",
       content: `Validate AI models against regulatory standards and
 internal policies to ensure responsible deployment.`,
-      video: "/media/videos/ai/ai-improve.webm",
+      video: "/media/videos/ai/compliance.webm",
     },
     {
       title: "Lineage Tracking",
