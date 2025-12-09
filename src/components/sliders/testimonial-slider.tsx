@@ -37,7 +37,7 @@ export default function TestimonialSlider({ data }: Props) {
         return (
           <SwiperSlide
             key={item.client}
-            className="bg-white !w-full !h-70 md:h-full  rounded-[20px] p-5 md:p-8 lg:p-12"
+            className="bg-white !w-full rounded-[20px] p-5 md:p-8 lg:p-12 flex flex-col"
           >
             <Image
               src="/media/semicolon.svg"
@@ -46,14 +46,15 @@ export default function TestimonialSlider({ data }: Props) {
               height={200}
               className="w-10"
             />
-            <div className="font-helvetica text-base sm:text-lg mt-5 flex flex-col justify-between">
-              <div className="text-dark leading-[26px] sm:leading-[32px]">
-                {item.msg}
-              </div>
 
-              <div className="text-base sm:text-lg font-helvetica mt-5 sm:mt-8 absolute bottom-5 md:bottom-8">
+            <div className="mt-5 flex flex-col justify-between flex-1">
+              <p className="text-dark text-base sm:text-lg leading-[26px] sm:leading-[32px]">
+                {item.msg}
+              </p>
+
+              <p className="text-base sm:text-lg font-helvetica mt-5 sm:mt-8">
                 {item.role}
-              </div>
+              </p>
             </div>
           </SwiperSlide>
         );
