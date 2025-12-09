@@ -1091,7 +1091,7 @@ export default function Page() {
               </div> */}
 
               <div className="w-full mt-15">
-                <div className="aspect-[16/8] w-full">
+                <div className="2xl:aspect-[16/8] aspect-[16/10] w-full">
                   <Image
                     src="/media/home/contact-map.svg"
                     alt="map"
