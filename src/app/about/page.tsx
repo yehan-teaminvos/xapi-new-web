@@ -19,7 +19,7 @@ const strings = ["One Platform. Complete Governance. All Effortless."];
 
 const team = [
   {
-    image: "/media/about/Prabath.avif",
+    image: "/media/about/pr.avif",
     name: "Prabath Ariyarathna",
     designation: "CEO & Chief Architect",
     linkedin: "https://www.linkedin.com/in/prabath-ariyarathna-ab255016/",
@@ -125,10 +125,10 @@ const Page = () => {
         <div className="pt-18 lg:pt-28  ">
           <div className="max-2xl:container 2xl:max-w-[2000px] lg:px-15 px-5 mx-auto  sm:text-left text-center">
             <h2 className="text-3xl sm:text-[44px] font-artegra-sans-alt-medium tracking-[-3px] pb-5">
-              Company Growth Milestones
+               Cross-Border Data Compliance Enabled
             </h2>
             <p className="text-lg font-helvetica">
-              A Journey Built on Innovation, Trust, and Execution
+              Xapi was integrated into one of the world’s largest ports, enabling secure and compliant cross-border data operations.
             </p>
           </div>
           <CarRoadmapPath />
