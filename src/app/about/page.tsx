@@ -190,61 +190,64 @@ const Page = () => {
               enterprise technology, and product design.{" "}
             </p>
           </div>
-          <div className="grid lg:grid-cols-3 sm:grid-cols-3 grid-cols-1 gap-48 gap-y-10">
+          <div className="grid lg:grid-cols-3 sm:grid-cols-3 grid-cols-1 gap-7 gap-y-10">
             {team.map((member, index) => (
-              <div className="flex flex-col  text-left" key={index}>
-                <div className="relative aspect-[395/410] w-full overflow-hidden rounded-[10px]">
-                  <Image
-                    src={member.image}
-                    alt={`Leadership ${member.name}`}
-                    width={295}
-                    height={295}
-                    className=" w-full object-cover"
-                  />
-                  {/* linkedin2.svg at bottom-right of image; clickable if URL provided */}
-                  <div className="absolute bottom-3 right-3">
-                    {member.linkedin ? (
-                      <Link
-                        href={member.linkedin}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={`${member.name} on LinkedIn`}
-                        className="cursor-pointer"
-                      >
-                        <Image
-                          src="/media/icons/linkedin2.svg"
-                          alt="LinkedIn"
-                          width={32}
-                          height={32}
-                          className="block"
-                        />
-                      </Link>
-                    ) : (
-                      <Image
-                        src="/media/icons/linkedin2.svg"
-                        alt="LinkedIn placeholder"
-                        width={32}
-                        height={32}
-                        className="opacity-60"
-                      />
-                    )}
-                  </div>
-                </div>
-                <div className="flex flex-col sm:mt-7 mt-5 sm:max-w-[270px] pr-2">
-                  <div className="flex items-center justify-between">
-                    <h3 className="sm:text-[28px] text-2xl font-artegra-sans-alt-medium tracking-[-1.5px] sm:leading-[35px]">
-                      {member.name}
-                    </h3>
-                  </div>
-                  {/* small space to add/show LinkedIn URL */}
-                  {/* URL text removed — SVG overlay opens profile when provided */}
-                </div>
+  <div className="flex flex-col text-left" key={index}>
+    
+  
+    <div className="relative aspect-[9/11] w-full overflow-hidden rounded-[10px]">
+      <Image
+        src={member.image}
+        alt={`Leadership ${member.name}`}
+        width={295}
+        height={525}
+        className="w-full h-full object-cover"
+      />
 
-                <p className="sm:mt-3 sm:text-xl text-lg font-helvetica text-[#6C6C6C] text-left">
-                  {member.designation}
-                </p>
-              </div>
-            ))}
+      {/* LinkedIn icon bottom-right */}
+      <div className="absolute bottom-3 right-3">
+        {member.linkedin ? (
+          <Link
+            href={member.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`${member.name} on LinkedIn`}
+            className="cursor-pointer"
+          >
+            <Image
+              src="/media/icons/linkedin2.svg"
+              alt="LinkedIn"
+              width={32}
+              height={32}
+              className="block"
+            />
+          </Link>
+        ) : (
+          <Image
+            src="/media/icons/linkedin2.svg"
+            alt="LinkedIn placeholder"
+            width={32}
+            height={32}
+            className="opacity-60"
+          />
+        )}
+      </div>
+    </div>
+
+    <div className="flex flex-col sm:mt-7 mt-5 sm:max-w-[270px] pr-2">
+      <div className="flex items-center justify-between">
+        <h3 className="sm:text-[28px] text-2xl font-artegra-sans-alt-medium tracking-[-1.5px] sm:leading-[35px]">
+          {member.name}
+        </h3>
+      </div>
+    </div>
+
+    <p className="sm:mt-3 sm:text-xl text-lg font-helvetica text-[#6C6C6C] text-left">
+      {member.designation}
+    </p>
+  </div>
+))}
+
           </div>
         </div>
       </section>
