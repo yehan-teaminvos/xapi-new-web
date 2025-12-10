@@ -39,40 +39,43 @@ export const SolutionTestimonial = () => {
       <div className="flex">
         {testimonials.map((testimonial, index) => (
           <SwiperSlide
-            key={index}
-            className="md:w-[54.5%] sm:!h-96 !h-full rounded-[20px] border-primary border-[1px] md:p-10 p-7.5 flex-col justify-between flex "
-          >
-            <div className="flex-1 h-96 sm:h-60 md:h-55">
-              <div className="flex">
-                {[...Array(5)].map((_, i) => (
-                  <Star
-                    key={i}
-                    className="fill-[#523EF5] stroke-none w-5.5 h-5.5"
-                  />
-                ))}
-              </div>
-              <p className="font-helvetica sm:text-xl text-lg text-[#5F5F5F] leading-8 md:mt-7.5 mt-5">
-                {testimonial.msg}
-              </p>
-            </div>
-            <div className="flex items-center pt-10">
-              <Image
-                width={140}
-                height={140}
-                alt=""
-                src="/media/solutions/testimonial-profile-pic.png"
-                className="h-[35px] w-auto"
-              />
-              <span className="px-[15px]">
-                <p className="font-helvetica sm:text-base text-sm leading-none text-[#080808]">
-                  {testimonial.role},{" "}
-                </p>{" "}
-                <p className="font-helvetica sm:text-base text-sm leading-8 text-[#5F5F5F]">
-                  {testimonial.company}
-                </p>
-              </span>
-            </div>
-          </SwiperSlide>
+  key={index}
+  className="md:w-[54.5%] !w-full rounded-[20px] border-primary border-[1px] md:p-10 p-7.5 flex flex-col justify-between"
+>
+  <div className="flex-1 flex flex-col">
+    <div className="flex mb-4">
+      {[...Array(5)].map((_, i) => (
+        <Star
+          key={i}
+          className="fill-[#523EF5] stroke-none w-5.5 h-5.5"
+        />
+      ))}
+    </div>
+
+    <p className="font-helvetica sm:text-xl text-[17px] text-[#5F5F5F] leading-8">
+      {testimonial.msg}
+    </p>
+  </div>
+
+  <div className="flex items-center mt-8">
+    <Image
+      width={140}
+      height={140}
+      alt=""
+      src="/media/solutions/testimonial-profile-pic.png"
+      className="h-[35px] w-auto"
+    />
+    <span className="px-[15px]">
+      <p className="font-helvetica sm:text-base text-sm leading-none text-[#080808]">
+        {testimonial.role},{" "}
+      </p>
+      <p className="font-helvetica sm:text-base text-sm leading-8 text-[#5F5F5F]">
+        {testimonial.company}
+      </p>
+    </span>
+  </div>
+</SwiperSlide>
+
         ))}
       </div>
       <div className="testimonial-pagination1 mt-6 flex justify-center"></div>
